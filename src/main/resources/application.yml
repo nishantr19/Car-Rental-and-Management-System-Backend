@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:6c9dbe35-6f51-4cf3-af02-e7a88127fad9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: mysupersecretkeymysupersecretkey1234
+  expiration: 3600000
+
+
+  logging:
+    level:
+      org.springframework.security: INFO
