@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Ignore environment files
+.env
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build output
+dist/
